@@ -1,0 +1,7 @@
+#include "il2cpp-config.h"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/gc/BoehmGC.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/gc/GCHandle.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/gc/GarbageCollector.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/gc/NullGC.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/gc/WriteBarrier.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/gc/WriteBarrierValidation.cpp"

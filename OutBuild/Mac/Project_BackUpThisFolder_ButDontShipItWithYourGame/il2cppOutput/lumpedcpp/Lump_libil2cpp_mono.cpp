@@ -1,0 +1,7 @@
+#include "il2cpp-config.h"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/mono/MonoPosixHelper.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/mono/ThreadPool/ThreadPoolMonitorThread.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/mono/ThreadPool/ThreadPoolWorkerThread.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/mono/ThreadPool/threadpool-ms-io-poll.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/mono/ThreadPool/threadpool-ms-io.cpp"
+#include "/Users/liu/StudyData/Unity-HybridCLR/Project/HybridCLRData/LocalIl2CppData-OSXEditor/il2cpp/libil2cpp/mono/ThreadPool/threadpool-ms.cpp"
