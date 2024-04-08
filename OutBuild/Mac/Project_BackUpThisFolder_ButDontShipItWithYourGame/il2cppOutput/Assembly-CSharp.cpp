@@ -93,7 +93,7 @@ IL2CPP_EXTERN_C RuntimeClass* LogCallback_t8C3C9B1E0F185E2A25D09DE10DD8414898698
 IL2CPP_EXTERN_C RuntimeClass* Math_tA269614262430118C9FC5C4D9EF4F61C812568F0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
 IL2CPP_EXTERN_C String_t* _stringLiteral052C17E9D6BC1FE3DB31F3277AED6D12A2C6BDAC;
-IL2CPP_EXTERN_C String_t* _stringLiteralC9D7303232DA7E2492B63038ADC505D55240AD22;
+IL2CPP_EXTERN_C String_t* _stringLiteralC27C8AE691935691F5505EAAB7810F8E4B94056F;
 IL2CPP_EXTERN_C String_t* _stringLiteralD2EFCBBA102ED3339947E85F4141EB08926E40E9;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C const RuntimeMethod* ConsoleToScreen_Log_m0D674B99155A64ACF9E8F5FAA5C3D419810CAE6C_RuntimeMethod_var;
@@ -2482,16 +2482,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoadDll_Start_mDFFD4CEFDDC803966E45E8D7D
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral052C17E9D6BC1FE3DB31F3277AED6D12A2C6BDAC);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC9D7303232DA7E2492B63038ADC505D55240AD22);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC27C8AE691935691F5505EAAB7810F8E4B94056F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD2EFCBBA102ED3339947E85F4141EB08926E40E9);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Assembly hotUpdateAss = Assembly.Load(File.ReadAllBytes($"{Application.streamingAssetsPath}/HotUpdate.dll.bytes"));
+		// Assembly hotUpdateAss = Assembly.Load(File.ReadAllBytes($"{Application.streamingAssetsPath}/HotUpdate"));
 		String_t* L_0;
 		L_0 = Application_get_streamingAssetsPath_mBA7560B393A50853AE3C28C096A03849B8627A4A(/*hidden argument*/NULL);
 		String_t* L_1;
-		L_1 = String_Concat_m10758B01687A2181C8727AD9FD9CCF5325C61C2A(L_0, _stringLiteralC9D7303232DA7E2492B63038ADC505D55240AD22, /*hidden argument*/NULL);
+		L_1 = String_Concat_m10758B01687A2181C8727AD9FD9CCF5325C61C2A(L_0, _stringLiteralC27C8AE691935691F5505EAAB7810F8E4B94056F, /*hidden argument*/NULL);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_2;
 		L_2 = File_ReadAllBytes_m065D4CF7082DFE91967B3B41D644D01501817148(L_1, /*hidden argument*/NULL);
 		Assembly_t * L_3;

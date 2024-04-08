@@ -16,9 +16,9 @@
 		<data>
 		TpedTK14Cu2ck3Fq+vm55fWNd5E=
 		</data>
-		<key>Resources/Data/StreamingAssets/HotUpdate.dll.bytes</key>
+		<key>Resources/Data/StreamingAssets/HotUpdate</key>
 		<data>
-		DyYaTaiAnQflaeRq/zC++WHrZgc=
+		oqxth2sB1zPAvbYROqhVdHWEWbM=
 		</data>
 		<key>Resources/Data/app.info</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Resources/Data/globalgamemanagers</key>
 		<data>
-		kXJzJax5F9Y13N9vwCfyFIckMac=
+		KIOhEs+YzXRNIedN3ItYLkRtDC4=
 		</data>
 		<key>Resources/Data/globalgamemanagers.assets</key>
 		<data>
-		kpuAJopuSxIRyD902CGoVHgsaA0=
+		KRspALD3KdpOyBj1ydLP6TCukU0=
 		</data>
 		<key>Resources/Data/il2cpp_data/Metadata/global-metadata.dat</key>
 		<data>
-		HG32ZOXaGmMoZ8Br6dET+dAf0WU=
+		qvieolsDS01bX3UdbYxwJElQ9Pw=
 		</data>
 		<key>Resources/Data/il2cpp_data/Resources/mscorlib.dll-resources.dat</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Resources/Data/level0</key>
 		<data>
-		zLI00t6FoBqUM8KzVz14WfKh35g=
+		JUxHCE8YSnhlCm0w8qShnWgX/H4=
 		</data>
 		<key>Resources/Data/level0.resS</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Resources/Data/sharedassets0.assets</key>
 		<data>
-		A/3yCI/v9MI5olUVEssZFNZGccg=
+		mXSXLzc8emisiWLMRHu7wOD0v3I=
 		</data>
 		<key>Resources/DefaultPreferences.plist</key>
 		<data>
@@ -151,10 +151,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			GxKxPJAZi1QpDb30Qf8pgnrfACU=
+			L7D7C9WSj0NRExzolzSIvhhhhdI=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"1b12b13c90198b54290dbdf441ff29827adf0025" or cdhash H"3f29235274c5d6712dd5c46832610ef8f986fd43"</string>
+			<string>cdhash H"2fb0fb0bd5928f4351131ce8973488be186185d2" or cdhash H"8fd86946fb9a58650646c37c7952ae5b65f82a98"</string>
 		</dict>
 		<key>Frameworks/UnityPlayer.dylib</key>
 		<dict>
@@ -186,11 +186,11 @@
 			tXhujTeYWTXS2BHvEcHc2XIbMGMV5MxTzwwoqT1j5k8=
 			</data>
 		</dict>
-		<key>Resources/Data/StreamingAssets/HotUpdate.dll.bytes</key>
+		<key>Resources/Data/StreamingAssets/HotUpdate</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ke6aOFwc1EY/UkFBL3LAUL5Jvg3t4eYbf965zKbgOxA=
+			/GK/IE4z4YEARgbyBX5lbcjN4whPkhnH39iIChtUXMw=
 			</data>
 		</dict>
 		<key>Resources/Data/app.info</key>
@@ -211,21 +211,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ek8ZYz3JPyz+GcqwcIgOfN+FOVeV0AVjCciI8YDQucI=
+			9N/U994eGvHXlKvw2zoYT3/6gjSRV4fDxYz7+sOIEQw=
 			</data>
 		</dict>
 		<key>Resources/Data/globalgamemanagers.assets</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0q7SqdfuRzHW9iXISPcQucEbZ/BOQJq+XH/RzV4DkbQ=
+			eXDFcmBEs7HmOXnZ3+1HBqunACpvU+PgesMHMUovzjc=
 			</data>
 		</dict>
 		<key>Resources/Data/il2cpp_data/Metadata/global-metadata.dat</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xko0U+mw7PZ9grZTdyxw+/ohobXIAtsegn2iqCvYHuc=
+			Icp9imhSph+NY21QGVWJftGwtflzddVhEUzDgk2Ns1Y=
 			</data>
 		</dict>
 		<key>Resources/Data/il2cpp_data/Resources/mscorlib.dll-resources.dat</key>
@@ -365,7 +365,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2qOSFAaOf6YNkF9J66koMSZ92SlIb9F1apTcxu++t78=
+			Q68RzLswa8jURjRobN28Q4FSsUAnLld2tOQokZorjOU=
 			</data>
 		</dict>
 		<key>Resources/Data/level0.resS</key>
@@ -379,7 +379,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/io18wHyArJClUdyJ7y6y/E8TcHK+cPiPuN2gMSbN6M=
+			kRDIlkNKzuZ2JN4Da8vWia/+iekWlW+FEiKngq+y0VA=
 			</data>
 		</dict>
 		<key>Resources/DefaultPreferences.plist</key>
