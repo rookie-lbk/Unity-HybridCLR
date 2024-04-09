@@ -11733,6 +11733,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TypedReference_tE1755FC30D207D9552DE27539E907
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TypedReference_GetHashCode_m7FF650B701D7CFAAB6BE2AC4D302798522B7A43F (TypedReference_tE1755FC30D207D9552DE27539E907EE92C8C073A * __this, const RuntimeMethod* method);
 // System.Boolean System.TypedReference::Equals(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TypedReference_Equals_m5D5FBF738C9B8C2BB88A145779032E3EF9A65EEC (TypedReference_tE1755FC30D207D9552DE27539E907EE92C8C073A * __this, RuntimeObject * ___o0, const RuntimeMethod* method);
+// System.Object System.TypedReference::InternalToObject(System.Void*)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * TypedReference_InternalToObject_m4165161AC539825971A3F27CD9F0F4DC1E3EB2BF (void* ___value0, const RuntimeMethod* method);
 // System.Boolean System.IntPtr::IsNull()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_IsNull_m4F73FDEC9D6C90AE4CFEE3A10EBFA887E361A983 (intptr_t* __this, const RuntimeMethod* method);
 // System.Boolean System.TypedReference::get_IsNull()
@@ -20967,6 +20969,22 @@ IL2CPP_EXTERN_C  bool TypedReference_Equals_m5D5FBF738C9B8C2BB88A145779032E3EF9A
 	bool _returnValue;
 	_returnValue = TypedReference_Equals_m5D5FBF738C9B8C2BB88A145779032E3EF9A65EEC(_thisAdjusted, ___o0, method);
 	return _returnValue;
+}
+// System.Object System.TypedReference::ToObject(System.TypedReference)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * TypedReference_ToObject_m755FFE4F830921F5CB9126861D3034CD6425F231 (TypedReference_tE1755FC30D207D9552DE27539E907EE92C8C073A  ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0;
+		L_0 = TypedReference_InternalToObject_m4165161AC539825971A3F27CD9F0F4DC1E3EB2BF((void*)(void*)((uintptr_t)(&___value0)), /*hidden argument*/NULL);
+		return L_0;
+	}
+}
+// System.Object System.TypedReference::InternalToObject(System.Void*)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * TypedReference_InternalToObject_m4165161AC539825971A3F27CD9F0F4DC1E3EB2BF (void* ___value0, const RuntimeMethod* method)
+{
+	typedef RuntimeObject * (*TypedReference_InternalToObject_m4165161AC539825971A3F27CD9F0F4DC1E3EB2BF_ftn) (void*);
+	using namespace il2cpp::icalls;
+	return ((TypedReference_InternalToObject_m4165161AC539825971A3F27CD9F0F4DC1E3EB2BF_ftn)mscorlib::System::TypedReference::InternalToObject) (___value0);
 }
 // System.Boolean System.TypedReference::get_IsNull()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TypedReference_get_IsNull_mB94DAB1B0A6727ABCE6559D517D3B2481870C165 (TypedReference_tE1755FC30D207D9552DE27539E907EE92C8C073A * __this, const RuntimeMethod* method)

@@ -15724,6 +15724,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t * StringBuilder_Append_m1ADA3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Normalization_GetCanonicalHangul_mD32DBF4AF3A8AA450DAEF2393CCF7D56A58FABA2 (int32_t ___s0, Int32U5BU5D_t70F1BDC14B1786481B176D6139A5E3B87DC54C32* ___buf1, int32_t ___bufIdx2, const RuntimeMethod* method);
 // System.Int32 System.Text.Normalization::CharMapIdx(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Normalization_CharMapIdx_m2C1A3F9C0E87EE299DBB43529C0814DA8E02BBA5 (int32_t ___cp0, const RuntimeMethod* method);
+// System.Boolean System.Text.Normalization::IsNormalized(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Normalization_IsNormalized_mD929E339A04A8FC16D6D3106A1F626CC3AF7E57F (String_t* ___source0, int32_t ___type1, const RuntimeMethod* method);
 // System.String System.Text.Normalization::Normalize(System.String,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Normalization_Normalize_mE0F72DCA2CC9267AE3A0CE9A9B6551FEA6074D3D (String_t* ___source0, int32_t ___type1, const RuntimeMethod* method);
 // System.String System.Text.Normalization::Compose(System.String,System.Int32)
@@ -40423,6 +40425,288 @@ IL_0077:
 	{
 		int32_t L_38 = ___bufIdx2;
 		return L_38;
+	}
+}
+// System.Boolean System.Text.Normalization::IsNormalized(System.String,System.Text.NormalizationForm)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Normalization_IsNormalized_m6619BB0C15187E607402FCE14A0EB6510AF90AD4 (String_t* ___source0, int32_t ___normalizationForm1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___normalizationForm1;
+		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_0, (int32_t)2)))
+		{
+			case 0:
+			{
+				goto IL_0024;
+			}
+			case 1:
+			{
+				goto IL_001c;
+			}
+			case 2:
+			{
+				goto IL_001c;
+			}
+			case 3:
+			{
+				goto IL_002c;
+			}
+			case 4:
+			{
+				goto IL_0034;
+			}
+		}
+	}
+
+IL_001c:
+	{
+		String_t* L_1 = ___source0;
+		IL2CPP_RUNTIME_CLASS_INIT(Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Normalization_IsNormalized_mD929E339A04A8FC16D6D3106A1F626CC3AF7E57F(L_1, 0, /*hidden argument*/NULL);
+		return L_2;
+	}
+
+IL_0024:
+	{
+		String_t* L_3 = ___source0;
+		IL2CPP_RUNTIME_CLASS_INIT(Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Normalization_IsNormalized_mD929E339A04A8FC16D6D3106A1F626CC3AF7E57F(L_3, 1, /*hidden argument*/NULL);
+		return L_4;
+	}
+
+IL_002c:
+	{
+		String_t* L_5 = ___source0;
+		IL2CPP_RUNTIME_CLASS_INIT(Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Normalization_IsNormalized_mD929E339A04A8FC16D6D3106A1F626CC3AF7E57F(L_5, 2, /*hidden argument*/NULL);
+		return L_6;
+	}
+
+IL_0034:
+	{
+		String_t* L_7 = ___source0;
+		IL2CPP_RUNTIME_CLASS_INIT(Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Normalization_IsNormalized_mD929E339A04A8FC16D6D3106A1F626CC3AF7E57F(L_7, 3, /*hidden argument*/NULL);
+		return L_8;
+	}
+}
+// System.Boolean System.Text.Normalization::IsNormalized(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Normalization_IsNormalized_mD929E339A04A8FC16D6D3106A1F626CC3AF7E57F (String_t* ___source0, int32_t ___type1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	String_t* G_B13_0 = NULL;
+	RuntimeObject * G_B13_1 = NULL;
+	String_t* G_B12_0 = NULL;
+	RuntimeObject * G_B12_1 = NULL;
+	int32_t G_B14_0 = 0;
+	String_t* G_B14_1 = NULL;
+	RuntimeObject * G_B14_2 = NULL;
+	{
+		V_0 = (-1);
+		V_1 = 0;
+		goto IL_0084;
+	}
+
+IL_0006:
+	{
+		String_t* L_0 = ___source0;
+		int32_t L_1 = V_1;
+		NullCheck(L_0);
+		Il2CppChar L_2;
+		L_2 = String_get_Chars_m9B1A5E4C8D70AA33A60F03735AF7B77AB9DBBA70(L_0, L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		uint8_t L_3;
+		L_3 = Normalization_GetCombiningClass_m2BB5FE9D0AA618261C3F2FEB62138E2CE27F69A0(L_2, /*hidden argument*/NULL);
+		V_2 = L_3;
+		int32_t L_4 = V_2;
+		if (!L_4)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		int32_t L_5 = V_2;
+		int32_t L_6 = V_0;
+		if ((((int32_t)L_5) >= ((int32_t)L_6)))
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_001c:
+	{
+		int32_t L_7 = V_2;
+		V_0 = L_7;
+		String_t* L_8 = ___source0;
+		int32_t L_9 = V_1;
+		NullCheck(L_8);
+		Il2CppChar L_10;
+		L_10 = String_get_Chars_m9B1A5E4C8D70AA33A60F03735AF7B77AB9DBBA70(L_8, L_9, /*hidden argument*/NULL);
+		int32_t L_11 = ___type1;
+		IL2CPP_RUNTIME_CLASS_INIT(Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		int32_t L_12;
+		L_12 = Normalization_QuickCheck_m01442BEEAEA24EE291E980388F6DD56BA1DB4D21(L_10, L_11, /*hidden argument*/NULL);
+		V_3 = L_12;
+		int32_t L_13 = V_3;
+		switch (L_13)
+		{
+			case 0:
+			{
+				goto IL_0040;
+			}
+			case 1:
+			{
+				goto IL_0046;
+			}
+			case 2:
+			{
+				goto IL_0048;
+			}
+		}
+	}
+	{
+		goto IL_0084;
+	}
+
+IL_0040:
+	{
+		int32_t L_14 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_14, (int32_t)1));
+		goto IL_0084;
+	}
+
+IL_0046:
+	{
+		return (bool)0;
+	}
+
+IL_0048:
+	{
+		int32_t L_15 = ___type1;
+		if (!L_15)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		int32_t L_16 = ___type1;
+		if ((!(((uint32_t)L_16) == ((uint32_t)2))))
+		{
+			goto IL_005d;
+		}
+	}
+
+IL_004f:
+	{
+		String_t* L_17 = ___source0;
+		String_t* L_18 = ___source0;
+		int32_t L_19 = ___type1;
+		IL2CPP_RUNTIME_CLASS_INIT(Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		String_t* L_20;
+		L_20 = Normalization_Normalize_mE0F72DCA2CC9267AE3A0CE9A9B6551FEA6074D3D(L_18, L_19, /*hidden argument*/NULL);
+		bool L_21;
+		L_21 = String_op_Equality_m50B3548E4AC232558190B0052877B290AA1D436A(L_17, L_20, /*hidden argument*/NULL);
+		return L_21;
+	}
+
+IL_005d:
+	{
+		String_t* L_22 = ___source0;
+		int32_t L_23 = V_1;
+		G_B12_0 = L_22;
+		G_B12_1 = NULL;
+		if ((((int32_t)L_23) > ((int32_t)0)))
+		{
+			G_B13_0 = L_22;
+			G_B13_1 = NULL;
+			goto IL_0066;
+		}
+	}
+	{
+		int32_t L_24 = V_1;
+		G_B14_0 = L_24;
+		G_B14_1 = G_B12_0;
+		G_B14_2 = G_B12_1;
+		goto IL_0069;
+	}
+
+IL_0066:
+	{
+		int32_t L_25 = V_1;
+		G_B14_0 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_25, (int32_t)1));
+		G_B14_1 = G_B13_0;
+		G_B14_2 = G_B13_1;
+	}
+
+IL_0069:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		int32_t L_26;
+		L_26 = Normalization_CombineHangul_m79527912C3BB9B1624B08B13AB50FA41536FE78D((StringBuilder_t *)G_B14_2, G_B14_1, G_B14_0, /*hidden argument*/NULL);
+		V_1 = L_26;
+		int32_t L_27 = V_1;
+		if ((((int32_t)L_27) >= ((int32_t)0)))
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0075:
+	{
+		String_t* L_28 = ___source0;
+		int32_t L_29 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(Normalization_t44B7E310FFDD9FE973C492E2964A7C3ABABD213F_il2cpp_TypeInfo_var);
+		int32_t L_30;
+		L_30 = Normalization_TryComposeWithPreviousStarter_m3357CD64BF044301DC56FBEF17CBFB781345DA5C((StringBuilder_t *)NULL, L_28, L_29, /*hidden argument*/NULL);
+		V_1 = L_30;
+		int32_t L_31 = V_1;
+		if ((((int32_t)L_31) >= ((int32_t)0)))
+		{
+			goto IL_0084;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0084:
+	{
+		int32_t L_32 = V_1;
+		String_t* L_33 = ___source0;
+		NullCheck(L_33);
+		int32_t L_34;
+		L_34 = String_get_Length_m129FC0ADA02FECBED3C0B1A809AE84A5AEE1CF09_inline(L_33, /*hidden argument*/NULL);
+		if ((((int32_t)L_32) < ((int32_t)L_34)))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		return (bool)1;
 	}
 }
 // System.String System.Text.Normalization::Normalize(System.String,System.Text.NormalizationForm)
